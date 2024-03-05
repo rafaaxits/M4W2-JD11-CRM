@@ -5,13 +5,14 @@ public class Cliente {
     private String nome;
     private Integer idade;
     private String endereco;
+    private char genero;
 
-
-    public Cliente(String cpf, String nome, Integer idade, String endereco) {
+    public Cliente(String cpf, String nome, Integer idade, String endereco, char genero) {
         this.cpf = cpf;
         this.nome = nome;
         this.idade = idade;
         this.endereco = endereco;
+        this.genero = genero;
     }
 
     public String getCpf() {
@@ -46,6 +47,14 @@ public class Cliente {
         this.endereco = endereco;
     }
 
+    public char getGenero() {
+        return genero;
+    }
+
+    public void setGenero(char genero) {
+        this.genero = genero;
+    }
+
     @Override
     public String toString() {
         return "Cliente{" +
@@ -53,6 +62,7 @@ public class Cliente {
                 ", nome='" + nome + '\'' +
                 ", idade=" + idade +
                 ", endereco='" + endereco + '\'' +
+                ", genero=" + genero +
                 '}';
     }
 }
