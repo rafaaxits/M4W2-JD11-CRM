@@ -10,6 +10,12 @@ public class Main {
 
         Cliente clienteF = new Cliente("444.555.666-77", "Maria Batista", 25,
                 "Rua teste git", 'F');
-        System.out.printf(clienteF.toString());
+        System.out.printf(clienteF.toString()+"\n");
+
+        ClientBuilder clienteTest = new ClientBuilder().comIdentificacao("Rafael", "Camara", "Figueredo",
+                "000.111.222-33", "18/04/1997", 'M').comContatos("rafaelcamara.f@gmail.com",
+                "Rua teste", "(81) 9.99745-7742");
+
+        System.out.printf(clienteTest.toString());
     }
 }
